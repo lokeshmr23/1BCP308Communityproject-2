@@ -18,9 +18,10 @@ services:
         value: 3.13.0
     healthCheckPath: /healthz
 
-  # 2. Static Site Deployment (Alternative zero-server static CDN mirror)
+  # 2. Static Site Deployment (Zero-server static CDN edge mirror)
   - type: web
     name: aushadhasahaya-static
+    runtime: static
     buildCommand: "./render-build.sh"
     staticPublishPath: ./web
     pullRequestPreviewsEnabled: true
