@@ -1,0 +1,22 @@
+$ python3 src/make_field_data.py
+== field-data pre-pass: synthetic, seeded (2025), dependency-embedded ==
+  wrote data/baseline_survey.csv                lines=  53    3665 bytes
+    sha256 646add256960489cbbbfb68d1e181fc4ac5882f8ba983b081e8a7f214bc6c065
+  wrote data/pilot_usage.csv                    lines= 337   17538 bytes
+    sha256 7fa504507b89595159b149d9fd3f43d80f0220c0f0daec54a04001dd8b80656f
+  wrote data/post_survey.csv                    lines=  53    1456 bytes
+    sha256 af11488a1beed5dab65475f91c01e86c36a8bf7217b76b324280a50c91a64148
+  wrote data/dakshina_kannada_facilities.json   lines= 138    4280 bytes
+    sha256 e19c869030a9e8b77cd386b5adc3bfb63673b9f370a7ce601a4c15a9f6811d86
+  wrote data/dakshina_kannada_facilities.csv    lines=   9     962 bytes
+    sha256 3450d6247480e1af647daffb50d4a72862ec053651b7050da184f48db70fd222
+  wrote data/secondary_drug_interactions.json   lines= 102    4862 bytes
+    sha256 11bb7657e012eadb2571247ac0f3cc67d8b2705da71d1d7d851eb758e03f184d
+  wrote data/beers_criteria_rules.json          lines=  79    3091 bytes
+    sha256 0b62199b62a396bd8fc389a78fc92c93f13c4165486f9e1b378f251145013117
+  wrote data/residents_roster.json              lines=1623   38628 bytes
+    sha256 b6af03fb2fd75ed29f57da34f6f940a6099b28976024e06a9d4f9617a051107c
+  cohort map: 52 respondents, 28 senior residents across Dakshina Kannada old-age homes
+  pilot: 28 residents x 12 weeks -> 336 weekly administration records
+  secondary datasets: OpenFDA/RxNorm interactions (10 high-risk pairs), AGS Beers (6 rules), 8 DK facilities
+MAKE RESULT: 8 field & secondary dataset files written deterministically (seed 2025), sha256 recorded -- PASS

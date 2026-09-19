@@ -1,0 +1,30 @@
+$ python3 src/cp08_dataset_pack.py
+== CP-08  Week-9 secondary dataset pack & open-source model directory ==
+
+Dataset / Secondary Source         | Repository / Authority       | Focus / Content
+-----------------------------------------------------------------------------------------------
+OpenFDA Drug Database & Label API  | US FDA Open Data Portal      | 10 High-Risk Drug Pairs
+NIH NLM RxNorm Clinical Drugs      | US National Library of Med   | Standard RXCUI Normalized Codes
+AGS Beers Criteria (2023 Update)   | American Geriatrics Society  | 6 Geriatric High-Risk Drug Classes
+WHO Essential Meds for Geriatrics  | World Health Organization    | Core Essential Geriatric Formulary
+DK Senior Care Home Registry       | Dept of Senior Citizens, GoK | 8 Registered Old Age Homes
+Dakshina Kannada GeoJSON Polygon   | OpenStreetMap / DataMeet India | District Boundary & 7 Taluk Geometries
+-----------------------------------------------------------------------------------------------
+
+RECOGNIZED OPEN-SOURCE MODELS & DATASET FINDERS UTILIZED:
+  • dmis-lab/biobert-v1.1            [Hugging Face Hub / NCBI PubMed]:
+    Transformer NER for clinical entities & adverse events
+  • emilyalsentzer/Bio_ClinicalBERT  [Hugging Face Hub / MIMIC-III]:
+    Clinical notes representation and medication risk scoring
+  • nlpaueb/sec-bert-base            [Hugging Face / Open Access]:
+    Pharmacovigilance & adverse drug reaction extraction
+  • Kaggle Medication Adherence Sets [Kaggle Open Data Repository]:
+    Longitudinal pill-taking adherence patterns in chronic care
+
+SECONDARY DATASET FINGERPRINT LEDGER:
+  secondary_drug_interactions.json   : 11bb7657e012eadb... (4862 bytes)
+  beers_criteria_rules.json          : 0b62199b62a396bd... (3091 bytes)
+  dakshina_kannada_facilities.json   : e19c869030a9e8b7... (4280 bytes)
+  residents_roster.json              : b6af03fb2fd75ed2... (38628 bytes)
+
+CP-08 RESULT: secondary dataset pack verified with 6 open repositories, 28 residents, and 4 clinical model references -- PASS

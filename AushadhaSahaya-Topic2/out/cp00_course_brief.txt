@@ -1,0 +1,13 @@
+$ python3 src/cp00_course_brief.py
+== CP-00  Week-1 briefing: what the course pays for, verified from its own text ==
+
+CIE rubric weights  : 8 + 10 + 8 + 10 + 6 + 8 = 50 (must be 50)
+SEE rubric weights  : 16 + 20 + 16 + 20 + 12 + 16 = 100 (entered /100)
+SEE scaling         : 100 -> 50 (ITI-SMU module, automatic)
+gates (computed from the rules strings by regex, not remembered):
+  CIE eligibility   : >= 20 of 50  = 40% of CIE
+  SEE pass floor    : >= 35 of 100 in the SEE itself
+  overall pass      : CIE (out of 50) + SEE (scaled to 50) >= 40
+worst passing mix   : CIE 20 + SEE 20 scaled -> SEE raw 40/100 is the floor at bare CIE
+
+CP-00 RESULT: rubric arithmetic verified 50/100, gates 20/50, 35/100, 40 total — worst-mix SEE raw 40 — restated from source -- PASS

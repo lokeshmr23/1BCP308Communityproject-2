@@ -1,0 +1,30 @@
+$ python3 src/cp03_problem_statement.py
+== CP-03  Week-4 frozen problem statement and objective anchors ==
+
+FROZEN PROBLEM STATEMENT (VERBATIM):
+  Senior citizens residing in old-age homes across Dakshina Kannada district,
+  Karnataka, experience severe vulnerability to adverse drug events (ADEs),
+  missed dosages, and scheduling oversights caused by manual paper-based
+  Medication Administration Records (MARs), heavy polypharmacy burdens (averaging
+  6.49 medicines per resident), and high caregiver turnover. Existing commercial
+  hospital systems are financially unviable and fail under frequent coastal
+  monsoon power/internet disruptions. There is an urgent societal need for an
+  offline-first, zero-recurring-cost, web-based medication administration and
+  monitoring system integrating secondary open clinical datasets (OpenFDA, NIH
+  RxNorm, AGS Beers Criteria) and geospatial supervisory mapping for Dakshina
+  Kannada eldercare homes.
+
+QUANTITATIVE BASELINE ANCHORS:
+  • Polypharmacy Threshold  : 6.49 meds/senior       -> Must handle 4-slot multi-dose daily regimens
+  • Baseline Missed Doses   : 5.58 doses/wk          -> Target post-pilot error reduction to < 1.0 dose/wk
+  • Caregiver Logging Load  : 75.8 mins/day          -> Target >= 60% reduction via 1-click digital MAR
+  • Offline Resilience      : 84.6% dark need        -> Zero network dependencies during active MAR logging
+  • Geospatial Scope        : Dakshina Kannada (8 homes) -> Map-based supervisory monitoring across all taluks
+
+TARGET ENGINEERING DELIVERABLES:
+  1. Responsive web-based MAR application with dual English/Kannada UI cues.
+  2. Client-side Drug-Drug Interaction (DDI) & Beers Criteria safety alert engine.
+  3. Dakshina Kannada district interactive geospatial facility map.
+  4. Zero-recurring-cost offline static architecture deployable to Git and Render.
+
+CP-03 RESULT: problem statement frozen with 5 quantitative baseline anchors and 4 engineering deliverables -- PASS

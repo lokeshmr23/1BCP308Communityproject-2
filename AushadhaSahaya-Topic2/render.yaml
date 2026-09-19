@@ -1,0 +1,26 @@
+# Render deployment blueprint for AushadhaSahaya
+# Topic 2: Medication Management System for Old-Age Homes
+# Dakshina Kannada District, Karnataka, India
+
+services:
+  # 1. Web Service Deployment (with REST API + Healthcheck)
+  - type: web
+    name: aushadhasahaya-api
+    runtime: python
+    buildCommand: "./render-build.sh"
+    startCommand: "python3 server.py"
+    plan: free
+    region: singapore
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.13.0
+    healthCheckPath: /healthz
+
+  # 2. Static Site Deployment (Alternative zero-server static CDN mirror)
+  - type: static
+    name: aushadhasahaya-static
+    buildCommand: "./render-build.sh"
+    staticPublishPath: ./web
+    pullRequestPreviewsEnabled: true

@@ -1,0 +1,20 @@
+$ python3 src/cp04_literature_baseline.py
+== CP-04  Week-5 literature review and comparative baseline analysis ==
+
+Solution Paradigm                      | Compliant Dims | Assessment Summary
+------------------------------------------------------------------------------------------
+Paper MAR Binders (DK Baseline)        |      4/6      | Limited (4/6)
+Commercial Care EHR (PointClickCare)   |      1/6      | Limited (1/6)
+Open-Source Hospital EHR (OpenMRS)     |      1/6      | Limited (1/6)
+AushadhaSahaya (Proposed Solution)     |      6/6      | Superior (6/6)
+------------------------------------------------------------------------------------------
+
+GAP ANALYSIS FINDINGS IN DAKSHINA KANNADA CONTEXT:
+  1. Heavyweight EHR systems (OpenMRS/PointClickCare) fail due to high server
+     maintenance demands and reliance on uninterrupted high-speed internet.
+  2. Paper records, while offline, suffer from a 14.6% error/delay rate, zero
+     interaction warning safeguards, and zero supervisory visibility across homes.
+  3. AushadhaSahaya bridges this gap with an offline-first, client-rendered static
+     architecture that embeds secondary open-source geriatric pharmacology datasets.
+
+CP-04 RESULT: literature baseline establishes 6-dimension superiority of offline-first geriatric architecture -- PASS

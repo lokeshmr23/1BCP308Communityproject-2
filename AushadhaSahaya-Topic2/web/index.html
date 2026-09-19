@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AushadhaSahaya | ಔಷಧ ಸಹಾಯ — Medication Management System for Old-Age Homes</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!-- Top Application Header -->
+  <header class="app-header">
+    <div class="brand-container">
+      <div class="brand-logo">💊</div>
+      <div class="brand-title">
+        <h1>AushadhaSahaya <span lang="kn" style="font-weight: 500; opacity: 0.9;">| ಔಷಧ ಸಹಾಯ</span></h1>
+        <p>Dakshina Kannada Eldercare Medication Administration & Safety Monitor · Mangaluru HQ</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <select id="facilityHeaderSelect" class="facility-select">
+        <option value="ALL">All Dakshina Kannada Facilities (8 Homes)</option>
+      </select>
+
+      <div class="status-badge badge-adherence">
+        <span>Adherence:</span>
+        <strong id="statAdherencePct">100%</strong>
+      </div>
+
+      <div class="status-badge badge-offline">
+        <span>● Zero-Leak Offline Safe</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Tabs -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="dashboard">
+      <span>📋</span> Live MAR Dashboard
+    </button>
+    <button class="tab-btn" data-tab="map">
+      <span>🗺️</span> Dakshina Kannada District Map
+    </button>
+    <button class="tab-btn" data-tab="residents">
+      <span>👥</span> Senior Residents Directory
+    </button>
+    <button class="tab-btn" data-tab="interactions">
+      <span>⚠️</span> Drug Interactions & Beers Criteria
+    </button>
+    <button class="tab-btn" data-tab="datasets">
+      <span>📚</span> Secondary Datasets & Open Models
+    </button>
+    <button class="tab-btn" data-tab="inventory">
+      <span>📦</span> Medicine Inventory & Refills
+    </button>
+    <button class="tab-btn" data-tab="analytics">
+      <span>📈</span> Adherence Analytics & MAR Export
+    </button>
+  </nav>
+
+  <!-- Main App Body -->
+  <main class="app-main">
+    
+    <!-- STATS BANNER -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Senior Residents</div>
+        <div class="stat-value" id="statTotalResidents">28</div>
+        <div class="stat-subtext">Active cohort across DK homes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Current Slot Progress</div>
+        <div class="stat-value" id="statActiveDoses">0 / 0</div>
+        <div class="stat-subtext">Doses recorded in current window</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Safety Alerts Active</div>
+        <div class="stat-value" style="color: #b91c1c;">4</div>
+        <div class="stat-subtext">Interactions & Beers warnings flagged</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Dakshina Kannada Homes</div>
+        <div class="stat-value" style="color: #0d9488;">8</div>
+        <div class="stat-subtext">Mangaluru, Bantwal, Puttur, etc.</div>
+      </div>
+    </div>
+
+    <!-- TAB 1: MAR DASHBOARD -->
+    <div id="tab-dashboard" class="tab-pane active">
+      <div class="slot-bar">
+        <div class="slot-buttons">
+          <button class="slot-btn active" data-slot="Morning">
+            <span>🌅</span> Morning (08:00) <span lang="kn">ಬೆಳಿಗ್ಗೆ</span>
+          </button>
+          <button class="slot-btn" data-slot="Noon">
+            <span>☀️</span> Noon (13:00) <span lang="kn">ಮಧ್ಯಾಹ್ನ</span>
+          </button>
+          <button class="slot-btn" data-slot="Evening">
+            <span>🌇</span> Evening (17:30) <span lang="kn">ಸಂಜೆ</span>
+          </button>
+          <button class="slot-btn" data-slot="Night">
+            <span>🌙</span> Bedtime (21:00) <span lang="kn">ರಾತ್ರಿ</span>
+          </button>
+        </div>
+
+        <div>
+          <input type="text" id="residentSearchInput" placeholder="🔍 Search resident name, bed, diagnosis..." style="padding: 0.5rem 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; width: 280px;">
+        </div>
+      </div>
+
+      <!-- Resident Cards Container -->
+      <div id="marResidentContainer" class="resident-mar-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 2: DAKSHINA KANNADA MAP -->
+    <div id="tab-map" class="tab-pane">
+      <div class="map-layout">
+        <div class="map-container-box">
+          <div style="margin-bottom: 0.75rem;">
+            <h3 style="color: #0f172a;">Dakshina Kannada Eldercare Geospatial Monitor</h3>
+            <p style="color: #64748b; font-size: 0.84rem;">
+              Interactive geographic map of Dakshina Kannada district (Mangaluru Coastal HQ, Bantwal, Moodbidri, Belthangady, Puttur, Kadaba, Sullia). Click pins to view facility telemetry.
+            </p>
+          </div>
+          <div id="mapContainerDiv"></div>
+        </div>
+
+        <div id="facilityDetailBox" class="facility-sidebar">
+          <div style="color: #94a3b8; text-align: center; padding: 2rem 0;">
+            Click any facility marker on the map to load telemetry details.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: RESIDENTS DIRECTORY -->
+    <div id="tab-residents" class="tab-pane">
+      <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #cbd5e1; margin-bottom: 1rem;">
+        <h3 style="color: #0f172a; margin-bottom: 0.35rem;">Senior Resident Medical Roster</h3>
+        <p style="color: #64748b; font-size: 0.85rem;">Complete geriatric cohort with age, clinical diagnoses, allergy registries, and active multi-drug regimens.</p>
+      </div>
+      <div id="residentDirectoryList"></div>
+    </div>
+
+    <!-- TAB 4: DRUG INTERACTIONS & BEERS CRITERIA -->
+    <div id="tab-interactions" class="tab-pane">
+      <div id="interactionExplorerDiv"></div>
+    </div>
+
+    <!-- TAB 5: SECONDARY DATASETS & OPEN MODELS -->
+    <div id="tab-datasets" class="tab-pane">
+      <div id="datasetsExplorerDiv"></div>
+    </div>
+
+    <!-- TAB 6: INVENTORY & REFILLS -->
+    <div id="tab-inventory" class="tab-pane">
+      <div id="inventoryTrackerDiv"></div>
+    </div>
+
+    <!-- TAB 7: ADHERENCE ANALYTICS & EXPORT -->
+    <div id="tab-analytics" class="tab-pane">
+      <div id="analyticsTabDiv"></div>
+    </div>
+
+  </main>
+
+  <!-- Clinical Warning Modal Dialog -->
+  <div id="alertModal" class="modal-overlay">
+    <div class="modal-content">
+      <h3 id="modalTitle">⚠️ Clinical Safety Alert</h3>
+      <div id="modalBody" style="max-height: 400px; overflow-y: auto;"></div>
+      <div class="modal-actions">
+        <button id="modalCloseBtn" class="btn btn-primary">Acknowledge & Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/dakshina_kannada_map.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

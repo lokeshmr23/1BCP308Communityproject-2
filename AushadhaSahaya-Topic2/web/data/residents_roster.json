@@ -1,0 +1,1623 @@
+[
+  {
+    "id": "RES-01",
+    "name": "Bhavani Amma",
+    "age": 81,
+    "gender": "F",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward A-102",
+    "diagnoses": [
+      "Hypertension",
+      "Type 2 Diabetes",
+      "Osteoarthritis"
+    ],
+    "allergies": [
+      "Penicillin"
+    ],
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-02",
+    "name": "Anand Rao",
+    "age": 78,
+    "gender": "M",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward A-105",
+    "diagnoses": [
+      "CAD",
+      "Atrial Fibrillation",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Sulfa drugs"
+    ],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-03",
+    "name": "Kaveri Bai",
+    "age": 84,
+    "gender": "F",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward A-108",
+    "diagnoses": [
+      "Dementia (Early)",
+      "Hypertension",
+      "Insomnia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-04",
+    "name": "Baptist D'Souza",
+    "age": 86,
+    "gender": "M",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward B-201",
+    "diagnoses": [
+      "Chronic Kidney Disease (Stage 3)",
+      "Hypertension",
+      "Gout"
+    ],
+    "allergies": [
+      "Aspirin"
+    ],
+    "medications": [
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-05",
+    "name": "Philomena Pinto",
+    "age": 76,
+    "gender": "F",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward B-204",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Diabetic Neuropathy",
+      "Dyslipidemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-06",
+    "name": "Subraya Bhat",
+    "age": 82,
+    "gender": "M",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward B-209",
+    "diagnoses": [
+      "Benign Prostatic Hyperplasia",
+      "Hypertension",
+      "GERD"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-07",
+    "name": "Juliana Sequeira",
+    "age": 79,
+    "gender": "F",
+    "facility": "St_Anthonys_Jeppu",
+    "room_bed": "Ward C-302",
+    "diagnoses": [
+      "Osteoporosis",
+      "Rheumatoid Arthritis",
+      "Mild Cognitive Impairment"
+    ],
+    "allergies": [
+      "NSAIDs"
+    ],
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-08",
+    "name": "Padmanabha Poojary",
+    "age": 74,
+    "gender": "M",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 12",
+    "diagnoses": [
+      "COPD",
+      "Cor Pulmonale",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-09",
+    "name": "Rosy Correa",
+    "age": 88,
+    "gender": "F",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 14",
+    "diagnoses": [
+      "Severe Osteoarthritis",
+      "Hypertension",
+      "Chronic Insomnia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-10",
+    "name": "Sheena Shetty",
+    "age": 80,
+    "gender": "M",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 18",
+    "diagnoses": [
+      "Parkinson's Disease",
+      "Hypertension",
+      "Constipation"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-11",
+    "name": "Kamala Shenoy",
+    "age": 83,
+    "gender": "F",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 21",
+    "diagnoses": [
+      "Atrial Fibrillation",
+      "Stroke History (Left Hemiparesis)",
+      "Hypertension"
+    ],
+    "allergies": [
+      "Warfarin"
+    ],
+    "medications": [
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-12",
+    "name": "Cyprian Lobo",
+    "age": 77,
+    "gender": "M",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 25",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Hypertension",
+      "Glaucoma"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-13",
+    "name": "Devaki Alva",
+    "age": 85,
+    "gender": "F",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 29",
+    "diagnoses": [
+      "Alzheimer's Dementia (Moderate)",
+      "Urinary Incontinence"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-14",
+    "name": "Srinivasa Nayak",
+    "age": 75,
+    "gender": "M",
+    "facility": "Little_Sisters_Bajjodi",
+    "room_bed": "Room 32",
+    "diagnoses": [
+      "Coronary Artery Disease",
+      "Hyperlipidemia",
+      "GERD"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-15",
+    "name": "Carmeline Moras",
+    "age": 82,
+    "gender": "F",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-01",
+    "diagnoses": [
+      "Hypertension",
+      "Depressive Disorder",
+      "Hypothyroidism"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-16",
+    "name": "Mahabala Kulal",
+    "age": 79,
+    "gender": "M",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-03",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Peripheral Neuropathy",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-17",
+    "name": "Leelavathi Hegde",
+    "age": 87,
+    "gender": "F",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-06",
+    "diagnoses": [
+      "Congestive Heart Failure",
+      "Hypertension",
+      "Chronic Kidney Disease"
+    ],
+    "allergies": [
+      "ACE Inhibitors"
+    ],
+    "medications": [
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-18",
+    "name": "Charles Pais",
+    "age": 81,
+    "gender": "M",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-09",
+    "diagnoses": [
+      "Post-CABG",
+      "Atrial Fibrillation",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-19",
+    "name": "Kalyani Somayaji",
+    "age": 83,
+    "gender": "F",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-12",
+    "diagnoses": [
+      "Osteoarthritis",
+      "Hypertension",
+      "Dyspepsia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-20",
+    "name": "Vittala Acharya",
+    "age": 78,
+    "gender": "M",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-15",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Hypertension",
+      "BPH"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-21",
+    "name": "Mercy Rodrigues",
+    "age": 75,
+    "gender": "F",
+    "facility": "Snehasadan_Gurpur",
+    "room_bed": "Block G-18",
+    "diagnoses": [
+      "Bronchial Asthma",
+      "Osteoporosis",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-22",
+    "name": "Gopalakrishna Shenoy",
+    "age": 89,
+    "gender": "M",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 1",
+    "diagnoses": [
+      "Severe Dementia",
+      "Hypertension",
+      "Dysphagia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-23",
+    "name": "Sharada Adiga",
+    "age": 82,
+    "gender": "F",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 2",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Hypertension",
+      "Diabetic Retinopathy"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-24",
+    "name": "Manjappa Gowda",
+    "age": 77,
+    "gender": "M",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 3",
+    "diagnoses": [
+      "Hypertension",
+      "Chronic Stable Angina",
+      "Hypercholesterolemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  },
+  {
+    "id": "RES-25",
+    "name": "Theresa D'Cunha",
+    "age": 84,
+    "gender": "F",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 4",
+    "diagnoses": [
+      "Atrial Fibrillation",
+      "Hypertension",
+      "Osteoarthritis"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "With food"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      }
+    ],
+    "daily_dose_count": 4,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 1"
+  },
+  {
+    "id": "RES-26",
+    "name": "Govinda Marathe",
+    "age": 80,
+    "gender": "M",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 5",
+    "diagnoses": [
+      "Parkinsonism",
+      "Hypertension",
+      "Orthostatic Hypotension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With dinner"
+      },
+      {
+        "name": "Telmisartan",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Fasting / after tea"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      }
+    ],
+    "daily_dose_count": 5,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 2"
+  },
+  {
+    "id": "RES-27",
+    "name": "Gulabi Poojarthi",
+    "age": 86,
+    "gender": "F",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 6",
+    "diagnoses": [
+      "Congestive Heart Failure",
+      "Hypertension",
+      "Anemia"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dose": "10 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "At bedtime"
+      },
+      {
+        "name": "Aspirin (Ecosprin)",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "After lunch"
+      },
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      }
+    ],
+    "daily_dose_count": 6,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 3"
+  },
+  {
+    "id": "RES-28",
+    "name": "Pius Mascarenhas",
+    "age": 78,
+    "gender": "M",
+    "facility": "Sevashrama_Bantwal",
+    "room_bed": "Cottage 7",
+    "diagnoses": [
+      "Type 2 Diabetes",
+      "Peripheral Vascular Disease",
+      "Hypertension"
+    ],
+    "allergies": [],
+    "medications": [
+      {
+        "name": "Pantoprazole",
+        "dose": "40 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "30 mins before breakfast"
+      },
+      {
+        "name": "Paracetamol",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "PRN / Post meal for joint pain"
+      },
+      {
+        "name": "Levothyroxine",
+        "dose": "50 mcg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Early morning 6:00 empty stomach"
+      },
+      {
+        "name": "Clopidogrel",
+        "dose": "75 mg",
+        "route": "Oral",
+        "slot": "Night",
+        "instructions": "With food"
+      },
+      {
+        "name": "Furosemide",
+        "dose": "20 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "Morning with water"
+      },
+      {
+        "name": "Calcium + Vitamin D3",
+        "dose": "500 mg",
+        "route": "Oral",
+        "slot": "Noon",
+        "instructions": "Mid-day with curd or meal"
+      },
+      {
+        "name": "Amlodipine",
+        "dose": "5 mg",
+        "route": "Oral",
+        "slot": "Morning",
+        "instructions": "After breakfast"
+      }
+    ],
+    "daily_dose_count": 7,
+    "emergency_doctor": "Dr. Ronald Menezes / Dr. Smitha Rao",
+    "primary_caregiver": "Sister Staff 4"
+  }
+]

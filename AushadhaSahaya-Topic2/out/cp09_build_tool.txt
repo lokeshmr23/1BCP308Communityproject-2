@@ -1,0 +1,21 @@
+$ python3 src/cp09_build_tool.py
+== CP-09  Week-10 prototype build audit: AushadhaSahaya web application ==
+
+Asset Path                                 |    Bytes | SHA256 (first 16 hex)
+---------------------------------------------------------------------------
+index.html                                 |     7036 | 7ae7748e6d6e92c4
+css/app.css                                |    11362 | 464bce35a7a13859
+js/app.js                                  |    37254 | fb1cd418ec9d506c
+js/dakshina_kannada_map.js                 |     7792 | c838897044bb9c9e
+data/dakshina_kannada_facilities.json      |     4280 | e19c869030a9e8b7
+data/residents_roster.json                 |    38628 | b6af03fb2fd75ed2
+data/secondary_drug_interactions.json      |     4862 | 11bb7657e012eadb
+data/beers_criteria_rules.json             |     3091 | 0b62199b62a396bd
+---------------------------------------------------------------------------
+Total Shipped Bundle Footprint: 114305 bytes (111.6 KB)
+
+ZERO-LEAK DARK-NETWORK AUDIT (RULE D1):
+  ✓ Scanned 4 core source files: 0 external CDN or font leaks detected.
+  ✓ Full offline autonomy confirmed: runs on dark-network village care homes.
+
+CP-09 RESULT: web application build verified across 8 files, zero external network leaks, bundle footprint 111 KB -- PASS

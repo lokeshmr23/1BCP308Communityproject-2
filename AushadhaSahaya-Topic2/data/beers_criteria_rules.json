@@ -1,0 +1,79 @@
+[
+  {
+    "rule_id": "BEERS-01",
+    "drug_class": "First-generation Antihistamines",
+    "examples": [
+      "Diphenhydramine",
+      "Chlorpheniramine",
+      "Hydroxyzine"
+    ],
+    "rationale": "Highly anticholinergic; risk of confusion, dry mouth, constipation, urinary retention, and heightened fall risk in older adults.",
+    "recommendation": "Avoid. Use non-sedating alternatives like Cetirizine or Loratadine at renal adjusted doses.",
+    "quality_of_evidence": "Moderate",
+    "strength_of_recommendation": "Strong"
+  },
+  {
+    "rule_id": "BEERS-02",
+    "drug_class": "Long-acting Benzodiazepines",
+    "examples": [
+      "Diazepam",
+      "Flurazepam",
+      "Clonazepam"
+    ],
+    "rationale": "Prolonged elimination half-life in geriatrics; marked increase in cognitive impairment, delirium, motor vehicle crashes, and hip fractures.",
+    "recommendation": "Avoid for insomnia or agitation. If necessary for seizure, use short-acting agents like Lorazepam with tapering.",
+    "quality_of_evidence": "High",
+    "strength_of_recommendation": "Strong"
+  },
+  {
+    "rule_id": "BEERS-03",
+    "drug_class": "Non-steroidal Anti-inflammatory Drugs (NSAIDs)",
+    "examples": [
+      "Indomethacin",
+      "Ketorolac",
+      "Piroxicam",
+      "Naproxen"
+    ],
+    "rationale": "High risk of gastrointestinal bleeding, peptic ulcer perforation, acute kidney injury, fluid retention, and blood pressure elevation.",
+    "recommendation": "Avoid chronic use. Co-prescribe PPI if short-term use is unavoidable; prefer topical diclofenac or paracetamol.",
+    "quality_of_evidence": "High",
+    "strength_of_recommendation": "Strong"
+  },
+  {
+    "rule_id": "BEERS-04",
+    "drug_class": "Central Alpha-1 Blockers",
+    "examples": [
+      "Clonidine",
+      "Methyldopa"
+    ],
+    "rationale": "High risk of adverse CNS effects, bradycardia, and orthostatic hypotension leading to syncope and traumatic falls.",
+    "recommendation": "Avoid as first-line antihypertensive therapy in older adults.",
+    "quality_of_evidence": "Low",
+    "strength_of_recommendation": "Strong"
+  },
+  {
+    "rule_id": "BEERS-05",
+    "drug_class": "Sulfonylureas (Long-acting)",
+    "examples": [
+      "Glibenclamide (Glyburide)",
+      "Glimepiride"
+    ],
+    "rationale": "Severe, prolonged hypoglycemia in elderly patients due to active metabolites and declining renal clearance.",
+    "recommendation": "Avoid glibenclamide; prefer short-acting glipizide, DPP-4 inhibitors, or low-dose metformin if eGFR permits.",
+    "quality_of_evidence": "High",
+    "strength_of_recommendation": "Strong"
+  },
+  {
+    "rule_id": "BEERS-06",
+    "drug_class": "Tricyclic Antidepressants (TCAs)",
+    "examples": [
+      "Amitriptyline",
+      "Imipramine",
+      "Doxepin"
+    ],
+    "rationale": "Highly anticholinergic, sedating, orthostatic hypotension, cardiac conduction abnormalities.",
+    "recommendation": "Avoid. Use SSRIs (Sertraline, Escitalopram) or SNRIs for geriatric depression or neuropathic pain.",
+    "quality_of_evidence": "High",
+    "strength_of_recommendation": "Strong"
+  }
+]

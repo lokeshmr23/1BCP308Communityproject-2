@@ -1,0 +1,40 @@
+$ python3 src/cp14_viva_ledger.py
+== CP-14  Week-15 viva voce defense ledger: machine receipts for all criteria ==
+
+ID   | CO Map     | Rubric Row     | Question Title & Summary Defense
+--------------------------------------------------------------------------------------------
+Q01  | CO1, CO5   | CIE-1 / SEE-1  | Why focus on Dakshina Kannada old-age homes rather than urban hospitals?
+     └─ DEFENSE: Empirical baseline (data/baseline_survey.csv) proved 6.49 meds/senior polypharma...
+Q02  | CO5, CO6   | CIE-2 / SEE-2  | How does AushadhaSahaya survive coastal monsoon power blackouts and internet loss?
+     └─ DEFENSE: Client-side static architecture (web/) with LocalStorage persistence. Zero runti...
+Q03  | CO1, CO4   | CIE-3 / SEE-3  | Which secondary open-source datasets were used, and how was clinical validity guaranteed?
+     └─ DEFENSE: OpenFDA Adverse Event Reporting System, NIH RxNorm standard RXCUIs, and AGS Beer...
+Q04  | CO2, CO6   | CIE-2 / SEE-2  | How does the system intercept severe drug-drug interactions (e.g. Warfarin + Aspirin)?
+     └─ DEFENSE: Automated client-side graph evaluator runs in O(1) against 10 high-risk geriatri...
+Q05  | CO4, CO6   | CIE-4 / SEE-4  | Explain the AGS Beers Criteria 2023 integration and its clinical value.
+     └─ DEFENSE: Evaluates 6 high-risk drug classes (long-acting benzos, NSAIDs, TCAs) to prevent...
+Q06  | CO4        | CIE-3 / SEE-3  | How were the 71.1% caregiver time savings and 97.8% adherence rate substantiated?
+     └─ DEFENSE: Longitudinal 12-week pilot trial (data/pilot_usage.csv, 336 cohort rows) and 52 ...
+Q07  | CO3, CO5   | CIE-6 / SEE-6  | How is zero-recurring operational cost guaranteed for charitable trusts?
+     └─ DEFENSE: Zero database licenses, zero proprietary cloud subscriptions. Deployed via free-...
+Q08  | CO6        | CIE-4 / SEE-4  | What safeguard prevents a caregiver from erroneously confirming an administered dose?
+     └─ DEFENSE: Two-step confirmation modal with undo action, resident photo verification, bed n...
+Q09  | CO2, CO5   | CIE-2 / SEE-2  | How does the Dakshina Kannada interactive map aid supervisory monitoring?
+     └─ DEFENSE: Geocoded SVG map (web/js/dakshina_kannada_map.js) plots 8 care homes across Mang...
+Q10  | CO5, CO6   | CIE-2 / SEE-2  | Why was a client-rendered static web architecture chosen over a heavy backend server?
+     └─ DEFENSE: Low-end hardware in DK homes (2GB RAM PCs) cannot maintain database daemons; sta...
+Q11  | CO2, CO4   | CIE-4 / SEE-4  | How do you verify byte reproducibility across all project submissions?
+     └─ DEFENSE: Two-pass deterministic collector (collect.py) diffs all stdout transcripts byte-...
+Q12  | CO3, CO6   | CIE-6 / SEE-6  | How does this project fulfill Educational Social Responsibility (ESR) and SDG 3?
+     └─ DEFENSE: Directly targets SDG 3 (Target 3.8 & 3.d) and SDG 10 by protecting destitute, fr...
+--------------------------------------------------------------------------------------------
+
+COURSES OUTCOMES DEFENDED ACROSS ALL 12 QUESTIONS:
+  • CO1 (L2 – Understand): 2 defense responses mapped
+  • CO2 (L3 – Apply): 3 defense responses mapped
+  • CO3 (L3 – Apply): 2 defense responses mapped
+  • CO4 (L4 – Analyze): 4 defense responses mapped
+  • CO5 (L5 – Evaluate): 5 defense responses mapped
+  • CO6 (L6 – Create): 6 defense responses mapped
+
+CP-14 RESULT: viva ledger verified: 12 defense questions mapped to CO1-CO6 with disk receipts -- PASS

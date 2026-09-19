@@ -1,0 +1,25 @@
+$ python3 src/cp10_testing.py
+== CP-10  Week-11 testing truth table: safety engine, MAR logic & contrast ==
+
+ID   | Test Battery       | Description                                          | Status
+----------------------------------------------------------------------------------------
+T01  | MAR State Logic    | SCHEDULED transitions to all 4 terminal/sub states   | PASS
+T02  | MAR State Logic    | ADMINISTERED is terminal (0 outward transitions)     | PASS
+T03  | DDI Detection      | Warfarin + Aspirin triggers 'Major' severity flag    | PASS
+T04  | DDI Detection      | Lisinopril + Spironolactone triggers 'Major' severity flag | PASS
+T05  | DDI Detection      | Digoxin + Furosemide triggers 'Major' toxicity risk  | PASS
+T06  | DDI Detection      | Paracetamol + Amlodipine yields zero false positive  | PASS
+T07  | Beers Criteria     | Diazepam triggers BEERS-02 (Benzodiazepine fall hazard) | PASS
+T08  | Beers Criteria     | Indomethacin triggers BEERS-03 (NSAID GI toxicity)   | PASS
+T09  | Beers Criteria     | Amitriptyline triggers BEERS-06 (TCA anticholinergic toxicity) | PASS
+T10  | Allergy Guard      | Baptist D'Souza (RES-04) blocks Aspirin prescription | PASS
+T11  | Allergy Guard      | Bhavani Amma (RES-01) blocks Penicillin injection    | PASS
+T12  | DK Geospatial      | All 8 facilities fall within Dakshina Kannada district box | PASS
+T13  | DK Geospatial      | Mangaluru urban facilities (Jeppu, Bajjodi) match coastal bounds | PASS
+T14  | WCAG Contrast      | Primary text on white exceeds 7.0:1 (Actual: 17.85:1) | PASS
+T15  | WCAG Contrast      | Primary dark button on white exceeds 4.5:1 (Actual: 5.93:1) | PASS
+T16  | WCAG Contrast      | Danger badge text on light pink exceeds 4.5:1 (Actual: 5.30:1) | PASS
+----------------------------------------------------------------------------------------
+Test Execution Summary: 16/16 tests passed (100% success rate, 0 failures)
+
+CP-10 RESULT: 16 testing assertions passed 100% across 6 batteries (0 failures, 0 leaks) -- PASS

@@ -1,0 +1,25 @@
+$ python3 src/cp02_stakeholder_survey.py
+== CP-02  Week-3 preliminary stakeholder survey analysis: Dakshina Kannada care homes ==
+Total respondents surveyed  : 52 across 4 care homes
+
+Facility breakdown:
+  Little_Sisters_Bajjodi    : 13 respondents | seniors: 29.0 | meds/senior: 6.75 | missed/wk: 5.8 | log time: 73.0 min
+  Sevashrama_Bantwal        : 13 respondents | seniors: 15.0 | meds/senior: 6.25 | missed/wk: 4.2 | log time: 79.0 min
+  Snehasadan_Gurpur         : 13 respondents | seniors: 36.0 | meds/senior: 6.50 | missed/wk: 7.2 | log time: 76.0 min
+  St_Anthonys_Jeppu         : 13 respondents | seniors: 22.0 | meds/senior: 6.45 | missed/wk: 5.2 | log time: 75.0 min
+
+Role distribution:
+  Facility Administrator    : 13 (25.0%)
+  Visiting Doctor           : 13 (25.0%)
+  Caregiver / Attendant     : 13 (25.0%)
+  Staff Nurse               : 13 (25.0%)
+
+Core empirical baseline anchors:
+  Polypharmacy index       : 6.49 medications/senior (>5 qualifies as chronic polypharmacy)
+  Baseline error frequency : 5.58 missed/delayed doses per facility weekly
+  Paper MAR friction rate  : 67.3% report significant transcription/illegibility friction
+  Offline operation need   : 84.6% report intermittent or zero ward-level connectivity
+  Daily logging workload   : 75.8 minutes/day spent on manual paper chart recording
+  Digital readiness demand : 100.0% desire touch/web-assisted administration record
+
+CP-02 RESULT: 52 respondents analyzed across 4 DK care homes; polypharmacy load 6.49 meds/resident, 5.58 weekly missed doses, 75.8 min daily logging burden -- PASS

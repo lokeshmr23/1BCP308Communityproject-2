@@ -1,0 +1,16 @@
+$ python3 src/cp01_topic_screen.py
+== CP-01  Week-2 topic screening matrix: Dakshina Kannada community projects ==
+
+Topic shortlisted                                              | C1 | C2 | C3 | C4 | C5 | Weighted Score
+---------------------------------------------------------------------------------------------------------
+Topic 2: Medication Management for Old-Age Homes (Dakshina Kannada) |  4.8 |  4.7 |  4.6 |  4.5 |  4.6 |    4.66 / 5.00
+River Water Quality Telemetry (Nethravathi Basin, Mangaluru)   |  4.0 |  4.2 |  3.5 |  3.8 |  3.2 |    3.80 / 5.00
+Smart Waste Segregation Tracker (Mangaluru City Corporation)   |  3.8 |  3.9 |  4.0 |  3.4 |  3.6 |    3.77 / 5.00
+Arecanut Disease Mobile Classifier (Puttur / Bantwal)          |  4.2 |  4.0 |  3.6 |  3.7 |  3.5 |    3.85 / 5.00
+---------------------------------------------------------------------------------------------------------
+Selected Topic : Topic 2: Medication Management for Old-Age Homes (Dakshina Kannada)
+Winning score  : 4.66 / 5.00 (margin: +0.81 over runner-up)
+Location anchor: Dakshina Kannada district, Karnataka (headquarters: Mangaluru)
+Mapped outcomes: PO3, PO5, PO6, PO8 · SDGs: SDG 3 (Good Health and Well-Being, Targets 3.8 & 3.d), SDG 10 (Reduced Inequalities)
+
+CP-01 RESULT: topic screen selected Topic 2 (Medication Management) with score 4.66/5.00, margin +0.81 over runner-up -- PASS

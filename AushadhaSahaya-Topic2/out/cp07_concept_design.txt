@@ -1,0 +1,24 @@
+$ python3 src/cp07_concept_design.py
+== CP-07  Week-8 system architecture, state machine & design rules ==
+
+MAR Administration State Machine (5 states):
+  [SCHEDULED] ──> [ADMINISTERED], [DELAYED], [MISSED], [REFUSED]
+  [DELAYED] ──> [ADMINISTERED], [MISSED]
+  [ADMINISTERED] ──> (TERMINAL RECORD)
+  [MISSED] ──> (TERMINAL RECORD)
+  [REFUSED] ──> (TERMINAL RECORD)
+
+System Engine Surface & Component Registry:
+  • Secondary DDI Interaction Pairs : 10 clinically verified pairs
+  • AGS Beers Safety Rule Modules   : 6 high-risk geriatric drug classes
+  • Dakshina Kannada Care Facilities: 8 geocoded old-age homes
+  • DK District Geocoordinate Box   : Lat 12.7682°N–13.0691°N, Lng 74.8432°E–75.3210°E
+
+FIVE ARCHITECTURAL DESIGN RULES:
+  D1 (Dark-Network)     : Zero external network calls; 100% self-contained client-side bundle
+  D2 (Power Resilience) : LocalStorage persistence protects active MAR records across blackout events
+  D3 (Safety Intercept) : Immediate modal blocking alerts upon detecting Major DDI or Severe Allergy
+  D4 (Accessibility)    : WCAG 2.1 AA high-contrast UI, >=16px text, dual English/Kannada action labels
+  D5 (Audit Trail)      : Every administration event logs immutable timestamp, caregiver ID, and status
+
+CP-07 RESULT: architecture validated with 5 MAR states, 10 DDI pairs, 6 Beers rules, and 8 DK facility nodes -- PASS

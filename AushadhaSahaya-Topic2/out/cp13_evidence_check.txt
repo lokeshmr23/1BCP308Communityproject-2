@@ -1,0 +1,25 @@
+$ python3 src/cp13_evidence_check.py
+== CP-13  Week-14 evidence integrity audit: recompute numbers, verify bytes ==
+
+Data Artifact                        |   Bytes | SHA256 Checksum (first 16 hex)
+---------------------------------------------------------------------------
+baseline_survey.csv                  |    3665 | 646add256960489c
+pilot_usage.csv                      |   17538 | 7fa504507b895951
+post_survey.csv                      |    1456 | af11488a1beed5da
+dakshina_kannada_facilities.json     |    4280 | e19c869030a9e8b7
+dakshina_kannada_facilities.csv      |     962 | 3450d6247480e1af
+secondary_drug_interactions.json     |    4862 | 11bb7657e012eadb
+beers_criteria_rules.json            |    3091 | 0b62199b62a396bd
+residents_roster.json                |   38628 | b6af03fb2fd75ed2
+---------------------------------------------------------------------------
+
+PRESENTATION SLIDE AUDIT (RECOMPUTED FROM RAW DISK BYTES):
+  Slide 4 [Problem Anchor] : Mean Polypharmacy = 6.49 meds/senior (Verified)
+  Slide 8 [Field Impact]   : Daily Caregiver Time Saved = 53.9 mins (Verified)
+  Slide 11 [Pilot Endpoint]: Week 12 Cohort Adherence = 97.82% (Verified)
+
+  ✓ All 15 week programs verified present in src/
+  ✓ All 8 secondary data files verified on disk
+  ✓ Zero hard-typed floating claims: all numbers match CSV/JSON source bytes
+
+CP-13 RESULT: evidence check verified 15 programs and 8 datasets byte-consistent, 0 discrepancy -- PASS

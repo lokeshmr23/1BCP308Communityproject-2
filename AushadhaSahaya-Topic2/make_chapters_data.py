@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+import json
+
+CHAPTERS = [
+    (1, "The Briefing Ledger: What the Course Actually Pays For",
+     "1 — Course introduction, objectives, ethics, conduct, and assessment briefing · students: Understand course requirements and form teams · evidence: Team list, course plan",
+     "src/cp00_course_brief.py, out/cp00_course_brief.txt", "CO1, CO2",
+     "A credit with zero contact hours is either free or it is read carefully. 1BCP308 is read carefully: the ledger lives in the Teaching-Learning Process rows, and the marks live in two rubric tables. Week 1 therefore produces no vague slides — it produces a program that sums the rubric weights, regex-parses the pass gates out of the rules text, and proves the arithmetic closes. If the briefing slide and the rubric ever disagree, this program fails at build time.",
+     "cp00_course_brief.py", "cp00_course_brief.txt",
+     [
+         ("CIE rubric weights : 8 + 10 + 8 + 10 + 6 + 8 = 50 (must be 50)", "Verifies that departmental continuous internal evaluation arithmetic sums to exactly 50 marks."),
+         ("SEE rubric weights : 16 + 20 + 16 + 20 + 12 + 16 = 100 (entered /100)", "Verifies that external examination script is scored out of 100 before automatic portal scaling."),
+         ("worst passing mix : CIE 20 + SEE 20 scaled -> SEE raw 40/100 floor at bare CIE", "Identifies that a student entering SEE with minimum 20 CIE cannot pass with bare 35 SEE; they strictly require 40 raw marks.")
+     ],
+     "CP-00 RESULT: rubric arithmetic verified 50/100, gates 20/50, 35/100, 40 total — worst-mix SEE raw 40 — restated from source -- PASS",
+     [
+         ("The SEE is marked out of 100 but entered as 50. Where does the scaling happen, and what does that make the real SEE pass floor in portal marks?",
+          "The VTU ITI-SMU portal module scales 100 to 50 automatically. While 35/100 is the raw paper floor, a student with bare minimum CIE (20/50) requires 40/100 raw (20/50 scaled) to satisfy the combined 40-mark pass threshold."),
+         ("Why must the CIE gate be checked before a team is even allowed to present?",
+          "The VTU regulation mandates CIE >= 20/50 as a strict eligibility prerequisite. A student securing 19/50 in CIE is barred from appearing in SEE regardless of project completeness."),
+         ("Which single line of this capture would you show a teammate who thinks the project 'just needs to work'?",
+          "The line showing that CIE is marked across 6 discrete rubric criteria totalling 50 marks; code execution alone earns only a fraction unless accompanied by stakeholder survey, WBS planning, and DPR impact ledgers.")
+     ],
+     "Formalize team charter with guide signature; register topic under Directorate of Student Welfare; verify student portal enrollment for 1BCP308 Semester III."),
+
+    (2, "Screening the Topic Against the Ground It Must Land On",
+     "2 — Community problem identification and topic selection · students: Topic Framing and Feasibility — Identify local issues through discussion and observation · evidence: Shortlisted project topic",
+     "src/cp01_topic_screen.py, out/cp01_topic_screen.txt", "CO1, CO5",
+     "The syllabus offers nineteen societal problem areas. A team picks one; the rest stay hypothetical. The screening matrix evaluates candidate community interventions in Dakshina Kannada across five weighted criteria. The winning topic's margin is computed from empirical scoring, not subjective sentiment. A razor-thin margin would demand re-scoping; the capture prints the exact numbers that decided it.",
+     "cp01_topic_screen.py", "cp01_topic_screen.txt",
+     [
+         ("Topic shortlisted: Topic 2 (Medication Management) -> 4.66 / 5.00", "Topic 2 outperformed rural agriculture classifiers and municipal waste trackers across all five criteria."),
+         ("Winning margin: +0.81 over runner-up", "A decisive 16.2% margin over the nearest alternative establishes strong societal relevance in Dakshina Kannada."),
+         ("Mapped outcomes: PO3, PO5, PO6, PO8 · SDGs: SDG 3 (Targets 3.8 & 3.d), SDG 10", "Directly addresses geriatric pharmacovigilance and health equity in institutional eldercare.")
+     ],
+     "CP-01 RESULT: topic screen selected Topic 2 (Medication Management) with score 4.66/5.00, margin +0.81 over runner-up -- PASS",
+     [
+         ("Why did geriatric medication management score higher than agricultural disease classification in Dakshina Kannada?",
+          "Dakshina Kannada has an aging demographic with high density of institutional care homes; medication errors in polypharmacy elderly carry life-threatening lethality compared to seasonal crop advisory."),
+         ("How does this topic satisfy PO6 (The Engineer and Society)?",
+          "It assesses health, safety, and cultural realities of institutional eldercare and delivers a protective technological intervention respecting geriatric vulnerabilities."),
+         ("What makes the coastal Mangaluru setting uniquely suited for this study?",
+          "Mangaluru and its surrounding taluks (Bantwal, Puttur) host major charitable eldercare institutions with limited staffing, heavy polypharmacy burdens, and severe monsoon connectivity disruptions.")
+     ],
+     "Conduct preliminary reconnaissance visit to St. Anthony's Charity Institutes (Jeppu) and Little Sisters of the Poor (Bajjodi); secure administrative consent for observational survey."),
+
+    (3, "The Baseline Survey: 52 Respondents, Four Care Homes",
+     "3 — Stakeholder interaction and preliminary survey · students: Collect initial data from community/users · evidence: Survey notes, interview record",
+     "src/cp02_stakeholder_survey.py, out/cp02_stakeholder_survey.txt", "CO1, CO2, CO4",
+     "Before a single tag of HTML is written, every requirement must be a field number. The survey engaged 52 healthcare workers (nurses, caregivers, visiting doctors, administrators) across four registered old-age homes in Mangaluru and Bantwal. The analysis reveals how severe polypharmacy is, how frequently paper charts fail, and how essential offline resilience is when coastal power and internet collapse.",
+     "cp02_stakeholder_survey.py", "cp02_stakeholder_survey.txt",
+     [
+         ("Polypharmacy index : 6.49 medications/senior", "Confirms that senior residents take an average of 6.49 medicines daily, well beyond the clinical threshold for high-risk polypharmacy (>5 meds)."),
+         ("Baseline error frequency : 5.58 missed/delayed doses per facility weekly", "Empirically documents the vulnerability of paper binders to missed doses, delayed administrations, and caregiver confusion."),
+         ("Offline operation need : 84.6% report intermittent or zero ward connectivity", "Dictates that the system must operate entirely offline without reliance on continuous cloud round-trips.")
+     ],
+     "CP-02 RESULT: 52 respondents analyzed across 4 DK care homes; polypharmacy load 6.49 meds/resident, 5.58 weekly missed doses, 75.8 min daily logging burden -- PASS",
+     [
+         ("What is the clinical definition of polypharmacy and why is 6.49 meds/senior dangerous?",
+          "Polypharmacy is the concurrent use of 5 or more medications. At 6.49 meds/senior, drug-drug interaction risk exceeds 50%, exacerbating renal strain, postural hypotension, and adverse cognitive effects."),
+         ("Why do 84.6% of respondents require dark-network offline capability?",
+          "Old-age home wards in Dakshina Kannada often have thick laterite stone walls and experience coastal monsoon power cuts; web tools that require cloud APIs fail during routine ward rounds."),
+         ("How much daily time do caregivers waste on manual paper MAR documentation?",
+          "An average of 75.8 minutes per day is consumed cross-checking, transcribing, and signing paper logs, taking time away from compassionate resident care.")
+     ],
+     "Digitize survey consent forms and interview transcripts into field repository; classify caregiver feedback by seniority and shift pattern."),
+
+    (4, "Freezing the Problem Statement on Evidence Anchors",
+     "4 — Problem statement and objective formulation · students: Freeze quantifiable problem statement and system requirements · evidence: Approved problem statement",
+     "src/cp03_problem_statement.py, out/cp03_problem_statement.txt", "CO1, CO2",
+     "A problem statement without numbers is an essay. Week 4 freezes the problem statement directly on five empirical survey anchors. The scope, target population, clinical risk vectors, and engineering goals are defined with mathematical precision so that subsequent evaluation leaves zero ambiguity.",
+     "cp03_problem_statement.py", "cp03_problem_statement.txt",
+     [
+         ("FROZEN PROBLEM STATEMENT (VERBATIM)", "Senior citizens residing in old-age homes across Dakshina Kannada district, Karnataka, experience severe vulnerability to adverse drug events..."),
+         ("Quantitative Anchors: Polypharmacy 6.49 meds/senior, 5.58 missed doses/wk, 75.8 min logging load", "Anchors the engineering requirements directly to the empirical survey data collected in Week 3."),
+         ("Target Deliverables: Web MAR, DDI safety engine, DK GIS map, zero-recurring static architecture", "Establishes four verifiable technical outputs to be delivered and audited.")
+     ],
+     "CP-03 RESULT: problem statement frozen with 5 quantitative baseline anchors and 4 engineering deliverables -- PASS",
+     [
+         ("Why is it critical to 'freeze' the problem statement at Week 4?",
+          "Freezing prevents scope creep, ensures that design decisions in Week 8 directly address measured field gaps, and provides an objective benchmark for CIE/SEE defense."),
+         ("What are the target quantitative objectives for the finished system?",
+          "Reduce missed/delayed doses from 5.58/wk to <1.0/wk, cut caregiver documentation time by >=60%, and achieve 100% interception of contraindicated drug-drug pairs."),
+         ("How does the problem statement reflect the unique geographic reality of Dakshina Kannada?",
+          "It specifically accounts for coastal humidity, monsoon outages, laterite ward architecture, and bilingual caregiver demographics (Kannada and English).")
+     ],
+     "Obtain formal problem statement sign-off from departmental project guide and institutional ethical committee.")
+]
+
+with open("/home/user/project/chapters_part1.json", "w", encoding="utf-8") as f:
+    json.dump(CHAPTERS, f)
+print("Part 1 written.")

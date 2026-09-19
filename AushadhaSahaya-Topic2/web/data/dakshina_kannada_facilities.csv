@@ -1,0 +1,9 @@
+facility_id,facility_name,taluk,locality,latitude,longitude,sanctioned_beds,active_residents,nursing_staff
+DK-OAH-01,St. Anthony's Charity Institutes (Home for the Aged),Mangaluru,"Jeppu, Mangaluru",12.853,74.8432,120,94,8
+DK-OAH-02,Little Sisters of the Poor (Home for the Aged),Mangaluru,"Bajjodi, Nanthoor, Mangaluru",12.871,74.8621,85,76,6
+DK-OAH-03,Snehasadan Senior Citizens Care Home,Mangaluru,"Gurpur, Kaikamba",12.9354,74.9312,60,48,4
+DK-OAH-04,Abhaya Ashraya Senior Citizens Home,Mangaluru,"Assaigoli, Mudipu Road",12.8123,74.9189,50,42,3
+DK-OAH-05,Sevashrama Trust Old Age Care Home,Bantwal,"B.C. Road, Bantwal",12.8962,75.0315,45,38,3
+DK-OAH-06,Sri Rama Krishna Seva Ashrama (Vriddhashrama),Puttur,"Bolia, Puttur",12.7682,75.2014,40,35,3
+DK-OAH-07,Anandashram Senior Living Center,Moodbidri,"Alangar, Moodbidri",13.0691,74.9984,35,30,2
+DK-OAH-08,Sanjeevani Geriatric Care Ashram,Belthangady,"Ujire, Dharmasthala Road",12.9981,75.321,30,26,2
