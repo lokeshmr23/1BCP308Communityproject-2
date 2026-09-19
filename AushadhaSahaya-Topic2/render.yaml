@@ -7,7 +7,7 @@ services:
   - type: web
     name: aushadhasahaya-api
     runtime: python
-    buildCommand: "./render-build.sh"
+    rootDir: AushadhaSahaya-Topic2
     startCommand: "python3 server.py"
     plan: free
     region: singapore
@@ -22,6 +22,6 @@ services:
   - type: web
     name: aushadhasahaya-static
     runtime: static
-    buildCommand: "./render-build.sh"
+    rootDir: AushadhaSahaya-Topic2
     staticPublishPath: ./web
     pullRequestPreviewsEnabled: true
