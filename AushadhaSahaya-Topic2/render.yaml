@@ -7,7 +7,7 @@ services:
   - type: web
     name: aushadhasahaya-api
     runtime: python
-    buildCommand: "./render-build.sh"
+    rootDir: AushadhaSahaya-Topic2
     startCommand: "python3 server.py"
     plan: free
     region: singapore
@@ -18,10 +18,10 @@ services:
         value: 3.13.0
     healthCheckPath: /healthz
 
-  # 2. Static Site Deployment (Zero-server static CDN edge mirror)
+  # 2. Static Site Deployment (Zero-sleep static edge mirror)
   - type: web
     name: aushadhasahaya-static
     runtime: static
-    buildCommand: "./render-build.sh"
+    rootDir: AushadhaSahaya-Topic2
     staticPublishPath: ./web
     pullRequestPreviewsEnabled: true
