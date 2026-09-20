@@ -1,0 +1,102 @@
+[
+  {
+    "pair_id": "DDI-001",
+    "drug_a": "Warfarin",
+    "drug_b": "Aspirin",
+    "severity": "Major",
+    "mechanism": "Synergistic antiplatelet and anticoagulant effect leading to severe gastrointestinal and intracranial hemorrhage risk.",
+    "management": "Avoid concurrent use unless strictly indicated (e.g. mechanical heart valve); close INR monitoring required.",
+    "source": "OpenFDA NDC 0056-0170 & NIH RxNorm RXCUI 11289",
+    "beers_risk": true
+  },
+  {
+    "pair_id": "DDI-002",
+    "drug_a": "Lisinopril",
+    "drug_b": "Spironolactone",
+    "severity": "Major",
+    "mechanism": "Combined inhibition of aldosterone and angiotensin II pathway causing severe hyperkalemia and cardiac arrhythmias in elderly patients with reduced GFR.",
+    "management": "Monitor serum potassium and creatinine within 1 week of co-prescription and periodically thereafter.",
+    "source": "NIH RxNorm RXCUI 29046 & 9997",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-003",
+    "drug_a": "Digoxin",
+    "drug_b": "Furosemide",
+    "severity": "Major",
+    "mechanism": "Loop diuretic-induced hypokalemia and hypomagnesemia markedly sensitizes elderly myocardium to fatal digoxin toxicity.",
+    "management": "Maintain serum potassium >= 4.0 mEq/L; reduce digoxin dose to 0.125 mg daily or alternate days in geriatrics.",
+    "source": "OpenFDA Adverse Event Reporting System (FAERS) & NIH DailyMed",
+    "beers_risk": true
+  },
+  {
+    "pair_id": "DDI-004",
+    "drug_a": "Metformin",
+    "drug_b": "Iohexol (Contrast)",
+    "severity": "Major",
+    "mechanism": "Iodinated radiocontrast media can induce acute renal impairment resulting in toxic metformin accumulation and fatal lactic acidosis.",
+    "management": "Withhold metformin 48 hours prior to and 48 hours following iodinated contrast administration; check eGFR.",
+    "source": "OpenFDA Drug Safety Communications & NIH RxNorm",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-005",
+    "drug_a": "Amlodipine",
+    "drug_b": "Simvastatin",
+    "severity": "Moderate",
+    "mechanism": "CYP3A4 inhibition by amlodipine increases simvastatin peak plasma levels by 77%, heightening rhabdomyolysis and myopathy risk.",
+    "management": "Cap simvastatin dose at maximum 20 mg daily when prescribed alongside amlodipine, or switch to atorvastatin/rosuvastatin.",
+    "source": "US FDA Drug Safety Warning & OpenFDA Label API",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-006",
+    "drug_a": "Ciprofloxacin",
+    "drug_b": "Theophylline",
+    "severity": "Major",
+    "mechanism": "Ciprofloxacin inhibits hepatic CYP1A2 clearance of theophylline, precipitating nausea, severe tachycardia, and status epilepticus.",
+    "management": "Avoid co-administration; if unavoidable, cut theophylline dose by 50% and monitor serum theophylline concentrations.",
+    "source": "NIH RxNorm RXCUI 2551 & 10438",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-007",
+    "drug_a": "Levothyroxine",
+    "drug_b": "Calcium Carbonate",
+    "severity": "Moderate",
+    "mechanism": "Calcium binds levothyroxine in the acidic gastrointestinal tract forming an insoluble chelate, significantly decreasing absorption.",
+    "management": "Separate administration by at least 4 hours (e.g. levothyroxine at 06:00 fasting, calcium at 12:00 with lunch).",
+    "source": "NIH DailyMed & OpenFDA Labeling",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-008",
+    "drug_a": "Clopidogrel",
+    "drug_b": "Omeprazole",
+    "severity": "Moderate",
+    "mechanism": "Omeprazole competitively inhibits CYP2C19, hindering hepatic bio-activation of clopidogrel into its active platelet inhibitor metabolite.",
+    "management": "Substitute omeprazole with pantoprazole or famotidine which have minimal CYP2C19 inhibitory action.",
+    "source": "FDA Safety Alert & NIH RxNorm RXCUI 32968",
+    "beers_risk": false
+  },
+  {
+    "pair_id": "DDI-009",
+    "drug_a": "Citalopram",
+    "drug_b": "Ondansetron",
+    "severity": "Major",
+    "mechanism": "Additive prolongation of the cardiac QT interval, predisposing frail elderly to Torsades de Pointes and sudden cardiac arrest.",
+    "management": "Perform baseline ECG; cap citalopram at 20 mg/day in adults >=60 years; avoid multiple QT-prolonging agents.",
+    "source": "OpenFDA FAERS signal & NIH RxNorm",
+    "beers_risk": true
+  },
+  {
+    "pair_id": "DDI-010",
+    "drug_a": "Ibuprofen",
+    "drug_b": "Enalapril",
+    "severity": "Major",
+    "mechanism": "NSAID inhibition of renal vasodilatory prostaglandins counteracts ACE inhibitor action, precipitating acute renal failure and hypertension crisis.",
+    "management": "Avoid NSAIDs in elderly hypertensive patients; use paracetamol (acetaminophen) or topical analgesic alternatives.",
+    "source": "American Geriatrics Society Beers Criteria 2023 & OpenFDA",
+    "beers_risk": true
+  }
+]

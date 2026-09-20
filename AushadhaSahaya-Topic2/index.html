@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AushadhaSahaya | ಔಷಧ ಸಹಾಯ — Medication Management System for Old-Age Homes</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+  <!-- Top Application Header -->
+  <header class="app-header">
+    <div class="brand-container">
+      <div class="brand-logo">💊</div>
+      <div class="brand-title">
+        <h1>AushadhaSahaya <span lang="kn" style="font-weight: 500; opacity: 0.9;">| ಔಷಧ ಸಹಾಯ</span></h1>
+        <p>Dakshina Kannada Eldercare Medication Administration & Safety Monitor · Mangaluru HQ</p>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <button id="btnUseMe" class="btn-use-me" title="Click for Interactive Customer Guide & 1-Click Simulation">
+        <span class="use-me-pulse"></span>
+        <span class="use-me-icon">⚡</span>
+        <div class="use-me-text">
+          <span class="use-me-main">USE ME</span>
+          <span class="use-me-sub">Customer Tour · ಉಪಯೋಗಿಸಿ</span>
+        </div>
+      </button>
+      <select id="facilityHeaderSelect" class="facility-select">
+        <option value="ALL">All Dakshina Kannada Facilities (8 Homes)</option>
+      </select>
+
+      <div class="status-badge badge-adherence">
+        <span>Adherence:</span>
+        <strong id="statAdherencePct">100%</strong>
+      </div>
+
+      <div class="status-badge badge-offline">
+        <span>● Zero-Leak Offline Safe</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Tabs -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="dashboard">
+      <span>📋</span> Live MAR Dashboard
+    </button>
+    <button class="tab-btn" data-tab="map">
+      <span>🗺️</span> Dakshina Kannada District Map
+    </button>
+    <button class="tab-btn" data-tab="residents">
+      <span>👥</span> Senior Residents Directory
+    </button>
+    <button class="tab-btn" data-tab="interactions">
+      <span>⚠️</span> Drug Interactions & Beers Criteria
+    </button>
+    <button class="tab-btn" data-tab="datasets">
+      <span>📚</span> Secondary Datasets & Open Models
+    </button>
+    <button class="tab-btn" data-tab="inventory">
+      <span>📦</span> Medicine Inventory & Refills
+    </button>
+    <button class="tab-btn" data-tab="analytics">
+      <span>📈</span> Adherence Analytics & MAR Export
+    </button>
+  </nav>
+
+  <!-- Main App Body -->
+  <main class="app-main">
+
+    <!-- ICON-BASED USE OF PROJECT TO THE CUSTOMER & CAREGIVER -->
+    <section class="customer-use-container">
+      <div class="customer-use-header">
+        <div class="use-header-left">
+          <div class="use-pill-badge">CARE VALUE JOURNEY · ಗ್ರಾಹಕರಿಗೆ ಯೋಜನೆಯ ಉಪಯೋಗ</div>
+          <h2>Icon-Based Use of Project to the Customer & Caregiver</h2>
+          <p>How AushadhaSahaya protects senior citizens, empowers caregivers, and streamlines clinical oversight in 5 icon-guided steps:</p>
+        </div>
+        <button id="btnQuickDemo" class="btn-quick-demo" title="Try 1-Click Interactive Simulation">
+          <span class="demo-bolt">⚡</span> <strong>Interactive Walkthrough</strong>
+        </button>
+      </div>
+
+      <div class="customer-steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card step-intake" onclick="switchTab('residents')">
+          <div class="step-badge badge-step1">STEP 1</div>
+          <div class="step-icon-wrapper icon-intake">
+            <span class="step-emoji">👵</span>
+          </div>
+          <h3 class="step-title">Resident Digital Intake</h3>
+          <div class="kannada-step-sub">ಡಿಜಿಟಲ್ ದಾಖಲಾತಿ</div>
+          <p class="step-desc">
+            Centralized digital profile with photo, age, bed, allergies, chronic ailments & emergency contacts. Eliminates lost paper files.
+          </p>
+          <div class="step-customer-benefit">
+            <strong>Customer Benefit:</strong> Zero mix-ups during shift handovers.
+          </div>
+          <div class="step-action-link">
+            <span>👥 View 28 Resident Profiles →</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card step-schedule" onclick="switchTab('dashboard')">
+          <div class="step-badge badge-step2">STEP 2</div>
+          <div class="step-icon-wrapper icon-schedule">
+            <span class="step-emoji">⏰</span>
+          </div>
+          <h3 class="step-title">4-Slot MAR Schedule</h3>
+          <div class="kannada-step-sub">ನಿಖರ ವೇಳಾಪಟ್ಟಿ</div>
+          <p class="step-desc">
+            Morning, Noon, Evening & Night windows with Kannada audio/visual cues. 1-tap administration logging (Given, Missed, Refused).
+          </p>
+          <div class="step-customer-benefit">
+            <strong>Customer Benefit:</strong> Adherence rises to 97.8%; prevents missed pills.
+          </div>
+          <div class="step-action-link">
+            <span>💊 Open Live MAR Scheduler →</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card step-safety" onclick="switchTab('interactions')">
+          <div class="step-badge badge-step3">STEP 3</div>
+          <div class="step-icon-wrapper icon-safety">
+            <span class="step-emoji">🛡️</span>
+          </div>
+          <h3 class="step-title">Clinical Safety Shield</h3>
+          <div class="kannada-step-sub">ಔಷಧಿ ಸುರಕ್ಷತೆ</div>
+          <p class="step-desc">
+            Automated OpenFDA/RxNorm cross-check & AGS Beers Criteria 2023 geriatric alerts (falls, sedation, bleeding risk).
+          </p>
+          <div class="step-customer-benefit">
+            <strong>Customer Benefit:</strong> Prevents adverse drug reactions & hospital readmissions.
+          </div>
+          <div class="step-action-link">
+            <span>⚠️ Test Safety Engine →</span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card step-map" onclick="switchTab('map')">
+          <div class="step-badge badge-step4">STEP 4</div>
+          <div class="step-icon-wrapper icon-map">
+            <span class="step-emoji">🗺️</span>
+          </div>
+          <h3 class="step-title">Dakshina Kannada Network</h3>
+          <div class="kannada-step-sub">ಜಿಲ್ಲಾ ನಕ್ಷೆ</div>
+          <p class="step-desc">
+            Interactive geospatial monitoring across 8 care homes in Mangaluru, Bantwal & Puttur with live bed capacity & adherence.
+          </p>
+          <div class="step-customer-benefit">
+            <strong>Customer Benefit:</strong> District-wide transparency for families & doctors.
+          </div>
+          <div class="step-action-link">
+            <span>📍 Explore District Map →</span>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-card step-audit" onclick="switchTab('analytics')">
+          <div class="step-badge badge-step5">STEP 5</div>
+          <div class="step-icon-wrapper icon-audit">
+            <span class="step-emoji">📊</span>
+          </div>
+          <h3 class="step-title">Audit Trail & Doctor Export</h3>
+          <div class="kannada-step-sub">ವರದಿ ಮತ್ತು ಆಡಿಟ್</div>
+          <p class="step-desc">
+            Tamper-proof digital administration logs. 1-click printable CSV/PDF export for visiting geriatricians with ₹0 cloud cost.
+          </p>
+          <div class="step-customer-benefit">
+            <strong>Customer Benefit:</strong> Saves 71.1% caregiver time daily; full compliance.
+          </div>
+          <div class="step-action-link">
+            <span>📈 View Adherence Reports →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- STATS BANNER -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Senior Residents</div>
+        <div class="stat-value" id="statTotalResidents">28</div>
+        <div class="stat-subtext">Active cohort across DK homes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Current Slot Progress</div>
+        <div class="stat-value" id="statActiveDoses">0 / 0</div>
+        <div class="stat-subtext">Doses recorded in current window</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Safety Alerts Active</div>
+        <div class="stat-value" style="color: #b91c1c;">4</div>
+        <div class="stat-subtext">Interactions & Beers warnings flagged</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Dakshina Kannada Homes</div>
+        <div class="stat-value" style="color: #0d9488;">8</div>
+        <div class="stat-subtext">Mangaluru, Bantwal, Puttur, etc.</div>
+      </div>
+    </div>
+
+    <!-- TAB 1: MAR DASHBOARD -->
+    <div id="tab-dashboard" class="tab-pane active">
+      <div class="slot-bar">
+        <div class="slot-buttons">
+          <button class="slot-btn active" data-slot="Morning">
+            <span>🌅</span> Morning (08:00) <span lang="kn">ಬೆಳಿಗ್ಗೆ</span>
+          </button>
+          <button class="slot-btn" data-slot="Noon">
+            <span>☀️</span> Noon (13:00) <span lang="kn">ಮಧ್ಯಾಹ್ನ</span>
+          </button>
+          <button class="slot-btn" data-slot="Evening">
+            <span>🌇</span> Evening (17:30) <span lang="kn">ಸಂಜೆ</span>
+          </button>
+          <button class="slot-btn" data-slot="Night">
+            <span>🌙</span> Bedtime (21:00) <span lang="kn">ರಾತ್ರಿ</span>
+          </button>
+        </div>
+
+        <div>
+          <input type="text" id="residentSearchInput" placeholder="🔍 Search resident name, bed, diagnosis..." style="padding: 0.5rem 0.85rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.85rem; width: 280px;">
+        </div>
+      </div>
+
+      <!-- Resident Cards Container -->
+      <div id="marResidentContainer" class="resident-mar-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 2: DAKSHINA KANNADA MAP -->
+    <div id="tab-map" class="tab-pane">
+      <div class="map-layout">
+        <div class="map-container-box">
+          <div style="margin-bottom: 0.75rem;">
+            <h3 style="color: #0f172a;">Dakshina Kannada Eldercare Geospatial Monitor</h3>
+            <p style="color: #64748b; font-size: 0.84rem;">
+              Interactive geographic map of Dakshina Kannada district (Mangaluru Coastal HQ, Bantwal, Moodbidri, Belthangady, Puttur, Kadaba, Sullia). Click pins to view facility telemetry.
+            </p>
+          </div>
+          <div id="mapContainerDiv"></div>
+        </div>
+
+        <div id="facilityDetailBox" class="facility-sidebar">
+          <div style="color: #94a3b8; text-align: center; padding: 2rem 0;">
+            Click any facility marker on the map to load telemetry details.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: RESIDENTS DIRECTORY -->
+    <div id="tab-residents" class="tab-pane">
+      <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #cbd5e1; margin-bottom: 1rem;">
+        <h3 style="color: #0f172a; margin-bottom: 0.35rem;">Senior Resident Medical Roster</h3>
+        <p style="color: #64748b; font-size: 0.85rem;">Complete geriatric cohort with age, clinical diagnoses, allergy registries, and active multi-drug regimens.</p>
+      </div>
+      <div id="residentDirectoryList"></div>
+    </div>
+
+    <!-- TAB 4: DRUG INTERACTIONS & BEERS CRITERIA -->
+    <div id="tab-interactions" class="tab-pane">
+      <div id="interactionExplorerDiv"></div>
+    </div>
+
+    <!-- TAB 5: SECONDARY DATASETS & OPEN MODELS -->
+    <div id="tab-datasets" class="tab-pane">
+      <div id="datasetsExplorerDiv"></div>
+    </div>
+
+    <!-- TAB 6: INVENTORY & REFILLS -->
+    <div id="tab-inventory" class="tab-pane">
+      <div id="inventoryTrackerDiv"></div>
+    </div>
+
+    <!-- TAB 7: ADHERENCE ANALYTICS & EXPORT -->
+    <div id="tab-analytics" class="tab-pane">
+      <div id="analyticsTabDiv"></div>
+    </div>
+
+  </main>
+
+  <!-- Clinical Warning Modal Dialog -->
+  <!-- Interactive USE ME Modal -->
+  <div id="useMeModal" class="modal-overlay">
+    <div class="modal-content use-me-modal-card">
+      <div class="use-me-modal-header">
+        <div class="modal-header-icon">⚡</div>
+        <div style="flex: 1;">
+          <h2>AushadhaSahaya Interactive Customer Guide</h2>
+          <p>Quick start walk-through for care home administrators, caregivers, and families</p>
+        </div>
+        <button id="useMeCloseBtn" class="modal-close-icon" title="Close">&times;</button>
+      </div>
+
+      <div class="use-me-modal-body">
+        <div class="sim-banner">
+          <div class="sim-banner-badge">🚀 LIVE SIMULATION TRIAL</div>
+          <h3>Experience the 1-Click Caregiver Workflow</h3>
+          <p>Test administering morning medications for <strong>Venkatramana Bhat (Bed 101)</strong> at Little Sisters of the Poor, Bajjodi, Mangaluru.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button id="btnExecuteDemoPass" class="btn-demo-action">
+              <span>💊</span> Simulate 1-Click Morning Medication Administration
+            </button>
+            <button id="btnResetDemoPass" class="btn-demo-reset" style="display: none;">
+              <span>🔄</span> Reset Simulation
+            </button>
+          </div>
+          <div id="simFeedback" class="sim-feedback-box" style="display: none;"></div>
+        </div>
+
+        <div class="customer-pillars-list">
+          <div class="pillar-row" onclick="switchTab('dashboard'); closeUseMeModal();">
+            <span class="pillar-icon">⏰</span>
+            <div class="pillar-info">
+              <h4>1. Administer Daily Dose</h4>
+              <p>Switch between Morning, Noon, Evening, Night windows and log <em>Given</em>, <em>Missed</em>, or <em>Refused</em>.</p>
+            </div>
+            <span class="pillar-arrow">→</span>
+          </div>
+
+          <div class="pillar-row" onclick="switchTab('interactions'); closeUseMeModal();">
+            <span class="pillar-icon">⚠️</span>
+            <div class="pillar-info">
+              <h4>2. Check Drug Safety & Beers Criteria</h4>
+              <p>Instant safety audit for high-risk combinations like Aspirin + Warfarin or Sedatives in elderly residents.</p>
+            </div>
+            <span class="pillar-arrow">→</span>
+          </div>
+
+          <div class="pillar-row" onclick="switchTab('map'); closeUseMeModal();">
+            <span class="pillar-icon">🗺️</span>
+            <div class="pillar-info">
+              <h4>3. Regional Facility Monitoring</h4>
+              <p>Explore 8 ashrams & eldercare homes across Mangaluru, Bantwal, and Puttur with live bed telemetry.</p>
+            </div>
+            <span class="pillar-arrow">→</span>
+          </div>
+
+          <div class="pillar-row" onclick="switchTab('analytics'); closeUseMeModal();">
+            <span class="pillar-icon">📄</span>
+            <div class="pillar-info">
+              <h4>4. Export Doctor's MAR Sheet</h4>
+              <p>Download clean, printable administration records for visiting geriatricians and hospital transfers.</p>
+            </div>
+            <span class="pillar-arrow">→</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="use-me-modal-footer">
+        <span class="zero-cost-note">💡 ₹0 Recurring Cost · Runs 100% Offline · VTU 1BCP308 Project</span>
+        <button id="useMeAcknowledgeBtn" class="btn btn-primary">Start Exploring</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="alertModal" class="modal-overlay">
+    <div class="modal-content">
+      <h3 id="modalTitle">⚠️ Clinical Safety Alert</h3>
+      <div id="modalBody" style="max-height: 400px; overflow-y: auto;"></div>
+      <div class="modal-actions">
+        <button id="modalCloseBtn" class="btn btn-primary">Acknowledge & Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/dakshina_kannada_map.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+resp_id,facility,role,seniors_handled,avg_meds_per_senior,missed_doses_weekly,paper_mar_friction_1to5,polypharmacy_risk_1to5,offline_need_1to5,digital_interest_1to5,logging_time_mins
+RESP-01,St_Anthonys_Jeppu,Facility Administrator,22,5.9,7,5,4,4,5,63
+RESP-02,Little_Sisters_Bajjodi,Visiting Doctor,29,7.0,4,4,5,5,4,76
+RESP-03,Snehasadan_Gurpur,Caregiver / Attendant,36,8.1,9,3,3,4,5,89
+RESP-04,Sevashrama_Bantwal,Staff Nurse,15,5.7,6,5,4,4,4,102
+RESP-05,St_Anthonys_Jeppu,Facility Administrator,22,6.8,3,4,5,5,5,50
+RESP-06,Little_Sisters_Bajjodi,Visiting Doctor,29,7.9,8,3,3,3,4,63
+RESP-07,Snehasadan_Gurpur,Caregiver / Attendant,36,5.5,5,5,4,4,5,76
+RESP-08,Sevashrama_Bantwal,Staff Nurse,15,6.6,2,4,5,4,4,89
+RESP-09,St_Anthonys_Jeppu,Facility Administrator,22,7.7,7,3,3,3,5,102
+RESP-10,Little_Sisters_Bajjodi,Visiting Doctor,29,5.3,4,5,4,4,4,50
+RESP-11,Snehasadan_Gurpur,Caregiver / Attendant,36,6.4,9,4,5,4,5,63
+RESP-12,Sevashrama_Bantwal,Staff Nurse,15,7.5,6,3,3,4,4,76
+RESP-13,St_Anthonys_Jeppu,Facility Administrator,22,5.1,3,5,4,4,5,89
+RESP-14,Little_Sisters_Bajjodi,Visiting Doctor,29,6.2,8,4,5,5,4,102
+RESP-15,Snehasadan_Gurpur,Caregiver / Attendant,36,7.3,5,3,3,4,5,50
+RESP-16,Sevashrama_Bantwal,Staff Nurse,15,4.9,2,5,4,4,4,63
+RESP-17,St_Anthonys_Jeppu,Facility Administrator,22,6.0,7,4,5,5,5,76
+RESP-18,Little_Sisters_Bajjodi,Visiting Doctor,29,7.1,4,3,3,3,4,89
+RESP-19,Snehasadan_Gurpur,Caregiver / Attendant,36,8.2,9,5,4,4,5,102
+RESP-20,Sevashrama_Bantwal,Staff Nurse,15,5.8,6,4,5,4,4,50
+RESP-21,St_Anthonys_Jeppu,Facility Administrator,22,6.9,3,3,3,3,5,63
+RESP-22,Little_Sisters_Bajjodi,Visiting Doctor,29,8.0,8,5,4,4,4,76
+RESP-23,Snehasadan_Gurpur,Caregiver / Attendant,36,5.6,5,4,5,4,5,89
+RESP-24,Sevashrama_Bantwal,Staff Nurse,15,6.7,2,3,3,4,4,102
+RESP-25,St_Anthonys_Jeppu,Facility Administrator,22,7.8,7,5,4,4,5,50
+RESP-26,Little_Sisters_Bajjodi,Visiting Doctor,29,5.4,4,4,5,5,4,63
+RESP-27,Snehasadan_Gurpur,Caregiver / Attendant,36,6.5,9,3,3,4,5,76
+RESP-28,Sevashrama_Bantwal,Staff Nurse,15,7.6,6,5,4,4,4,89
+RESP-29,St_Anthonys_Jeppu,Facility Administrator,22,5.2,3,4,5,5,5,102
+RESP-30,Little_Sisters_Bajjodi,Visiting Doctor,29,6.3,8,3,3,3,4,50
+RESP-31,Snehasadan_Gurpur,Caregiver / Attendant,36,7.4,5,5,4,4,5,63
+RESP-32,Sevashrama_Bantwal,Staff Nurse,15,5.0,2,4,5,4,4,76
+RESP-33,St_Anthonys_Jeppu,Facility Administrator,22,6.1,7,3,3,3,5,89
+RESP-34,Little_Sisters_Bajjodi,Visiting Doctor,29,7.2,4,5,4,4,4,102
+RESP-35,Snehasadan_Gurpur,Caregiver / Attendant,36,4.8,9,4,5,4,5,50
+RESP-36,Sevashrama_Bantwal,Staff Nurse,15,5.9,6,3,3,4,4,63
+RESP-37,St_Anthonys_Jeppu,Facility Administrator,22,7.0,3,5,4,4,5,76
+RESP-38,Little_Sisters_Bajjodi,Visiting Doctor,29,8.1,8,4,5,5,4,89
+RESP-39,Snehasadan_Gurpur,Caregiver / Attendant,36,5.7,5,3,3,4,5,102
+RESP-40,Sevashrama_Bantwal,Staff Nurse,15,6.8,2,5,4,4,4,50
+RESP-41,St_Anthonys_Jeppu,Facility Administrator,22,7.9,7,4,5,5,5,63
+RESP-42,Little_Sisters_Bajjodi,Visiting Doctor,29,5.5,4,3,3,3,4,76
+RESP-43,Snehasadan_Gurpur,Caregiver / Attendant,36,6.6,9,5,4,4,5,89
+RESP-44,Sevashrama_Bantwal,Staff Nurse,15,7.7,6,4,5,4,4,102
+RESP-45,St_Anthonys_Jeppu,Facility Administrator,22,5.3,3,3,3,3,5,50
+RESP-46,Little_Sisters_Bajjodi,Visiting Doctor,29,6.4,8,5,4,4,4,63
+RESP-47,Snehasadan_Gurpur,Caregiver / Attendant,36,7.5,5,4,5,4,5,76
+RESP-48,Sevashrama_Bantwal,Staff Nurse,15,5.1,2,3,3,4,4,89
+RESP-49,St_Anthonys_Jeppu,Facility Administrator,22,6.2,7,5,4,4,5,102
+RESP-50,Little_Sisters_Bajjodi,Visiting Doctor,29,7.3,4,4,5,5,4,50
+RESP-51,Snehasadan_Gurpur,Caregiver / Attendant,36,4.9,9,3,3,4,5,63
+RESP-52,Sevashrama_Bantwal,Staff Nurse,15,6.0,6,5,4,4,4,76

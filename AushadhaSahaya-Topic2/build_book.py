@@ -549,11 +549,11 @@ html_out += f"""
   </table>
   <h3 class="section-heading">E.2 Verification Against Served Bytes</h3>
   <pre class="terminal-block">
-$ curl -s https://aushadhasahaya.onrender.com/healthz
+$ curl -s https://aushadhasahaya-api.onrender.com/healthz
 {{"status": "ok", "service": "AushadhaSahaya", "version": "1.0.0", "district": "Dakshina Kannada"}}
 
 $ for f in index.html css/app.css js/app.js js/dakshina_kannada_map.js; do
-    echo -n "$f: "; curl -s https://aushadhasahaya.onrender.com/$f | sha256sum | cut -c1-16
+    echo -n "$f: "; curl -s https://aushadhasahaya-api.onrender.com/$f | sha256sum | cut -c1-16
   done
 index.html: 7ae7748e6d6e92c4
 css/app.css: 464bce35a7a13859
